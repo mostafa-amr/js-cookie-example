@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="checkCookies()">
+    <section id="cont1">
+      <div>
+        <label for="username">Enter your name</label>
+        <input type="text" name="username" id="username" />
+      </div>
+      <div>
+        <label for="age"> Enter your age &nbsp;&nbsp;</label>
+        <input type="number" name="age" id="age" />
+      </div>
+    </section>
+    <h3>select your Gender :</h3>
+    <label>
+      <input type="radio" name="Gender" id="male" checked />
+      <img src="1.jpg" />
+    </label>
+    <label id="lab">
+      <input type="radio" name="Gender" id="female" />
+      <img src="2.jpg" />
+    </label>
+    <div>
+      <label for="color">select your favourite color</label>
+      <select name="color" id="color">
+        <option value="red">red</option>
+        <option value="green">green</option>
+        <option value="blue">blue</option>
+      </select>
+    </div>
+    <input
+      type="button"
+      name="reg"
+      id="reg"
+      value="register"
+      onclick="butStart()"
+    />
+    <script src="cookie.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
